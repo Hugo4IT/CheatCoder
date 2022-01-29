@@ -1,0 +1,169 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://addons/CheatCoder/Presets/Konami.tres" type="Resource" id=1]
+[ext_resource path="res://addons/CheatCoder/CheatCodeListener.gd" type="Script" id=2]
+[ext_resource path="res://Demo/Scripts/Label.gd" type="Script" id=3]
+[ext_resource path="res://Demo/Montserrat-Font/Regular.tres" type="DynamicFont" id=4]
+[ext_resource path="res://Demo/Montserrat-Font/BEEG.tres" type="DynamicFont" id=5]
+[ext_resource path="res://Demo/Scripts/AdvancedScrollRect.gd" type="Script" id=6]
+
+[sub_resource type="Theme" id=1]
+default_font = ExtResource( 4 )
+
+[sub_resource type="Theme" id=2]
+default_font = ExtResource( 5 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Hint" type="Container" parent="."]
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = 16.0
+theme = SubResource( 2 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+scrolled_children = 5
+
+[node name="Up" type="Label" parent="Hint"]
+margin_right = 40.0
+margin_bottom = 14.0
+custom_colors/font_color = Color( 0.854902, 0, 0.215686, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+text = "Up"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Up2" type="Label" parent="Hint"]
+margin_right = 40.0
+margin_bottom = 14.0
+custom_colors/font_color = Color( 0.854902, 0, 0.215686, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+text = "Up"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Down" type="Label" parent="Hint"]
+margin_right = 40.0
+margin_bottom = 14.0
+custom_colors/font_color = Color( 0.854902, 0, 0.215686, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+text = "Down"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Down2" type="Label" parent="Hint"]
+margin_right = 40.0
+margin_bottom = 14.0
+custom_colors/font_color = Color( 0.854902, 0, 0.215686, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+text = "Down"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Left" type="Label" parent="Hint"]
+margin_right = 40.0
+margin_bottom = 14.0
+custom_colors/font_color = Color( 0.854902, 0, 0.215686, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+text = "Left"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Right" type="Label" parent="Hint"]
+margin_right = 40.0
+margin_bottom = 14.0
+custom_colors/font_color = Color( 0.854902, 0, 0.215686, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+text = "Right"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Left2" type="Label" parent="Hint"]
+margin_right = 40.0
+margin_bottom = 14.0
+custom_colors/font_color = Color( 0.854902, 0, 0.215686, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+text = "Left"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Right2" type="Label" parent="Hint"]
+margin_right = 40.0
+margin_bottom = 14.0
+custom_colors/font_color = Color( 0.854902, 0, 0.215686, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+text = "Right"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="B" type="Label" parent="Hint"]
+margin_right = 40.0
+margin_bottom = 14.0
+custom_colors/font_color = Color( 0.854902, 0, 0.215686, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+text = "B"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="A" type="Label" parent="Hint"]
+margin_right = 40.0
+margin_bottom = 14.0
+custom_colors/font_color = Color( 0.854902, 0, 0.215686, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+text = "A"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Enter" type="Label" parent="Hint"]
+margin_right = 40.0
+margin_bottom = 14.0
+custom_colors/font_color = Color( 0.854902, 0, 0.215686, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+text = "Enter"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Status" type="RichTextLabel" parent="."]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+grow_vertical = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+bbcode_text = "[center]
+Follow the guide on the left
+[/center]"
+text = "
+Follow the guide on the left
+"
+fit_content_height = true
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CheatCodeListener" type="Node" parent="."]
+script = ExtResource( 2 )
+code = ExtResource( 1 )
+
+[connection signal="cheat_activated" from="CheatCodeListener" to="Status" method="_cheat_code_activated"]
+[connection signal="cheat_progress" from="CheatCodeListener" to="Hint" method="set_scrolled_children"]

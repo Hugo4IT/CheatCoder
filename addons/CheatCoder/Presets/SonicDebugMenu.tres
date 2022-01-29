@@ -1,0 +1,7 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://addons/CheatCoder/CheatCode.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+entries = [ 0, 67, 16777234, 67, 16777231, 67, 16777233, 67, 65, 16777221 ]
