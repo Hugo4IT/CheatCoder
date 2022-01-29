@@ -77,7 +77,7 @@ The node has some values you can tweak, here is a brief overview:
 
 Now add the cheat code you just created:
 
-res/htu-step-10.mp4
+https://user-images.githubusercontent.com/48245742/151665274-cf19aa34-5a15-4769-a828-e52612f00c7f.mp4
 
 You can now connect these signals to whatever function you please:
 
