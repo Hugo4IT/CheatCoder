@@ -47,6 +47,8 @@ func _input(event: InputEvent) -> void:
 				if code_progress == len(code.entries):
 					if not repeat and not first_time:
 						emit_signal("cheat_activated")
+					if repeat:
+						emit_signal("cheat_activated")
 					first_time = true
 					code_progress = 0
 				else:
