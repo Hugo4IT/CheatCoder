@@ -45,9 +45,7 @@ func _input(event: InputEvent) -> void:
 				timeout_timer = timeout_delay
 				
 				if code_progress == len(code.entries):
-					if not repeat and not first_time:
-						emit_signal("cheat_activated")
-					if repeat:
+					if repeat or not first_time:
 						emit_signal("cheat_activated")
 					first_time = true
 					code_progress = 0
