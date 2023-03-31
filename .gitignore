@@ -19,3 +19,5 @@ mono_crash.*.json
 
 # Krita temp files
 **/*~
+
+.DS_Store
