@@ -1,3 +1,5 @@
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/N4N7LH6KJ)
+
 # CheatCoder
 
 - [CheatCoder](#cheatcoder)
